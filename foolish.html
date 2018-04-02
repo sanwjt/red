@@ -99,6 +99,24 @@
   <script src="foolishjs/jquery-3.2.1.min.js"> </script>
   
   <script src="foolishjs/foolishjs.js"></script>
+  <script src="foolishjs/share.js"></script>
+  <script>
+      $(function () {
+
+          window.wxShare = {
+              // 分享标题
+              title: '@所有人，小钱钱砸向你',
+              // 分享描述
+              desc:'红包来了啊啊啊啊快来点点点冲啊为了小钱钱冲啊啊啊啊',
+              // 分享链接
+              link: 'https://sanwjt.github.io/red/foolish.html',
+              // 分享icon
+              imgUrl:'https://pic3.qiyipic.com/common/20180328/share-logo.png'
+          }
+
+          weixinApi.share.init(wxShare);
+      })
+  </script>
 </body>
 
 </html>
