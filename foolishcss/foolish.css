@@ -43,9 +43,9 @@ audio{display: none;}
 .hb-info{
     position: absolute;
     top:2rem;
-    width: 8.76rem;
+    width: 13.81rem;
     left:50%;
-    margin-left: -4.38rem;
+    margin-left: -6.9rem;
     top:2.25rem;
 }
 .icon-kai{
@@ -261,8 +261,8 @@ audio{display: none;}
    .huyou-box button{width:15.625rem;height: 2.44rem;line-height: 2.44rem;background:#d85940;color: #fff;font-size: 1rem;border:none;border-radius: 5px;margin-top: 2.38rem;}
 
    .foolish-txt img{width: 3.44rem;height: 3.44rem;margin: 2.34rem 0 1rem;}
-   .txt1{width: 12.69rem;margin:0 auto;color: #303030;font-size: 0.78rem;line-height: 1.4rem;margin-top: 6.8125rem}
-   .big-red{font-size: 0.94rem;color: #d85940;font-weight: bold;}
+   .txt1{width: 15.31rem;margin:0 auto;color: #303030;font-size: 0.96rem;line-height: 1.6rem;margin-top: 7rem}
+   .big-red{font-size: 1.15rem;color: #d85940;font-weight: bold;}
    .huyou-box{text-align: center;}
    .input-box{text-align: center;padding:1.2rem 0 .8rem;border-bottom: 1px solid #d9d9d9;}
 
@@ -523,13 +523,13 @@ audio{display: none;}
 }
 .call1{
     position: absolute;
-    left: 4.3125rem;
+    right: 4.3125rem;
     bottom: 5.1875rem;
     width: 17%;
 }
 .call2{
     position: absolute;
-    right: 4.3125rem;
+    left: 4.3125rem;
     bottom: 5.1875rem;
     width: 17%;
 }
