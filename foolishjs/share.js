@@ -19,7 +19,7 @@ weixinApi.share = (function() {
     }
     //加载jssdk必要参数
     function loadShareConfig() {
-        var apiUrl = 'http://m.xhwhouse.com/index/initjssdk/?callback=jsonpCallback&url=' + encodeURIComponent(location.href);
+        var apiUrl = 'https://m.xhwhouse.com/index/initjssdk/?callback=jsonpCallback&url=' + encodeURIComponent(location.href);
         loadJsFile(apiUrl);
     }
 
