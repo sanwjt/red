@@ -58,10 +58,10 @@ weixinApi.share = (function() {
             if (window.wx) {
                 initWx(window.wx, result);
             } else {
-                loadJsFile("http://res.wx.qq.com/open/js/jweixin-1.0.0.js", function() {
+                loadJsFile("https://res.wx.qq.com/open/js/jweixin-1.0.0.js", function() {
                     if (typeof define === 'function' && define.cmd) {
                         // CMD 规范，for：seajs
-                        seajs.use("http://res.wx.qq.com/open/js/jweixin-1.0.0.js", function(wx) {
+                        seajs.use("https://res.wx.qq.com/open/js/jweixin-1.0.0.js", function(wx) {
                             initWx(wx, result);
                         });
                     } else {
