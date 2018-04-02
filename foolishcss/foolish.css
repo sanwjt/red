@@ -1,0 +1,564 @@
+@charset "utf-8";
+*{margin:0;padding:0;}
+body{
+    overflow: hidden;
+    /*background: #000;*/
+}
+audio{display: none;}
+.wrapper{width: 100%;height: 100%;position: absolute;background: #2f2f2f;}
+.hb{
+    width: 19.06rem;
+    height: 24.53rem;
+    left:50%;
+    margin-left:-9.53rem;
+    top:50%;
+    margin-top: -12.26rem;
+    /*background: blue;*/
+    position: absolute;
+    border-radius: 3%;
+}
+
+.hb-bg{
+    width: 19.06rem;
+    height: 24.53rem;
+    top: 50%;
+    left: 50%;
+    margin-top: -12.265rem;
+    margin-left: -9.53rem;
+    background: #cd533d;
+    position: absolute;
+    border-radius: 2%;
+}
+.hb-top{
+    width: 100%;
+    position: absolute;
+}
+
+.hb-topbg{
+    width: 100%;
+    display: block;
+    border-radius: 2%;
+}
+
+.hb-info{
+    position: absolute;
+    top:2rem;
+    width: 8.76rem;
+    left:50%;
+    margin-left: -4.38rem;
+    top:2.25rem;
+}
+.icon-kai{
+    width: 6.25rem;
+    height: 6.25rem;
+    position: absolute;
+    top:13.43rem;
+    left:50%;
+    margin-left:-3.125rem;
+    text-align: center;
+    background:url(../foolishimages/icon-kai.png) no-repeat center center;
+    background-size:5.625rem 5.625rem;
+    font-weight: bold;
+    z-index: 112;
+}
+.icon-kaizhuan{
+    width:6.25rem;
+    height:6.25rem;
+    background: url(../foolishimages/icon-transform1.png) ;
+    background-size:cover;
+    animation:xuanzhuan 1s steps(1, start) 1;
+    -webkit-animation:xuanzhuan 1s steps(1, start) 1;
+    opacity: 1;
+    /*position: absolute;
+    left:0;
+    top:0;*/
+}
+.icon-kaizhuan2{
+    width:6.25rem;
+    height:6.25rem;
+    background: url(../foolishimages/icon-transform1.png) ;
+    background-position: -6.25rem 0;
+    background-size: cover;
+
+    animation:xuanzhuan 2s steps(1, start) infinite;
+    -webkit-animation:xuanzhuan 2s steps(1, start) infinite;
+    opacity: 1;
+    /*position: absolute;
+    left:0;
+    top:0;*/
+}
+    @-webkit-keyframes xuanzhuan {
+            0%{
+                 background-position: 0 0;
+            }
+            12.5%{
+                background-position: -6.25rem 0;
+            }
+           25%{
+                 background-position: -12.5rem 0 ;
+           }
+            37.5%{
+                 background-position: -18.75rem 0 ;
+             }
+            50%{
+                  background-position: -25rem 0 ;
+             }
+            62.5%{
+                 background-position: -31.25rem 0 ;
+             }
+             75%{
+                 background-position: -37.5rem 0 ;
+             }
+             87.5%{
+                background-position: -43.75rem 0 ;
+             }
+             100%{
+                background-position: 50rem 0 ;
+             }
+        }
+        @-ms-keyframes xuanzhuan {
+            0%{
+                 background-position: 0 0;
+            }
+            12.5%{
+                background-position: -200px 0;
+            }
+           25%{
+                 background-position: -400px 0 ;
+           }
+            37.5%{
+                 background-position: -600px 0 ;
+             }
+            50%{
+                  background-position: -800px 0 ;
+             }
+            62.5%{
+                 background-position: -1000px 0 ;
+             }
+             75%{
+                 background-position: -1200px 0 ;
+             }
+             87.5%{
+                background-position: -1400px 0 ;
+             }
+             100%{
+                background-position: 0px 0 ;
+             }
+        }
+        @keyframes xuanzhuan {
+            0%{
+                 background-position: 0 0;
+            }
+            12.5%{
+                background-position: -200px 0;
+            }
+           25%{
+                 background-position: -400px 0 ;
+           }
+            37.5%{
+                 background-position: -600px 0 ;
+             }
+            50%{
+                  background-position: -800px 0 ;
+             }
+            62.5%{
+                 background-position: -1000px 0 ;
+             }
+             75%{
+                 background-position: -1200px 0 ;
+             }
+             87.5%{
+                background-position: -1400px 0 ;
+             }
+             100%{
+                background-position: 0px 0 ;
+             }
+        }
+/*.icon-kaizhuan2{
+
+}*/
+/*.bad-internet{position: fixed;width: 100%;height: 100%;background: rgba(0,0,0,0.6);display: none;}*/
+.internet-inner{
+    position: absolute;
+    width: 15.93rem;
+    height: 7.44rem;
+    left:50%;
+    margin-left: -7.97rem;
+    top:50%;
+    margin-top: -3.72rem;
+    background: #fff;
+    border-radius: 5px;
+    opacity: .8;
+    color: #000;
+    text-align: center;
+    display: none;
+    z-index: 113;
+}
+.internet-inner p{padding: 1.19rem 2rem 1rem;border-bottom: 1px solid #ebbeb0;display: flex;justify-content: center;align-items: center;
+    height: 2.5rem;}
+.btn-confirm{
+    color: #5381cf;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-top: 0.6rem;
+    display: inline-block;
+    height: 2rem;
+    width: 100%;
+}
+.loading-internet{width: 6.72rem;
+    height: 3.72rem;
+    background: #000;
+    opacity: 0.4;
+    color: #fff;
+    position: fixed;
+    z-index: 111111;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    margin-left: -3.36rem;
+    margin-top: -3.36rem;
+    border-radius: 5px;display: none;
+        padding: 1.5rem 0;
+}
+
+.foolname{
+    text-align: center;
+    font-size: 1.875rem;
+    line-height:4.1875rem;
+    position: absolute;
+    z-index: 110;
+    width: 100%;
+    color: #fff;
+}
+
+.phone-btn{
+    position: absolute;
+    width: 100%;
+    height: 14.375rem;
+    left: 0;
+    bottom: 0;
+
+    display: flex;
+}
+.phone-btn li{
+    flex: 1;
+}
+
+
+    .loading-internet img{width: 30%;margin-bottom: 1rem;}
+   .loading-internet p{font-size: 0.75rem;color: #fff;} 
+   .foolish{position: absolute;width: 100%;height: 100%;background: #fff;display: none;}
+   .foolish-txt{
+       height: 15.7rem;
+       background: #f1f1f1;
+       padding-top: 0.62rem;
+       text-align: center;
+   }
+   .foolish-title{font-size: 1rem;color: #ffe5b3}
+
+   .input-box input{width: 14.325rem;height: 2.44rem;line-height: 2.44rem;border-radius: 5px;background: #f3f3f3;border:1px solid #e3e3e3;margin:0 auto;padding-left:1.3rem;font-size: 1rem;color: #303030}
+   .input-box p{display:none;font-size: .8rem;color: #d85940;text-align: left;text-align: left;width: 14.325rem;margin: .5rem auto 0;}
+   .huyou-box button{width:15.625rem;height: 2.44rem;line-height: 2.44rem;background:#d85940;color: #fff;font-size: 1rem;border:none;border-radius: 5px;margin-top: 2.38rem;}
+
+   .foolish-txt img{width: 3.44rem;height: 3.44rem;margin: 2.34rem 0 1rem;}
+   .txt1{width: 12.69rem;margin:0 auto;color: #303030;font-size: 0.78rem;line-height: 1.4rem;margin-top: 6.8125rem}
+   .big-red{font-size: 0.94rem;color: #d85940;font-weight: bold;}
+   .huyou-box{text-align: center;}
+   .input-box{text-align: center;padding:1.2rem 0 .8rem;border-bottom: 1px solid #d9d9d9;}
+
+   .call{position: fixed;left:0;top:0;width: 100%;height: 100%;}
+   /*.call img{position: absolute;left:0;top:0;width: 100%;height: 100%;}*/
+   .share-box{position: fixed;left:0;top:0;width: 100%;height: 100%;width: 100%}
+/*.share-box img{*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+/*}*/
+   .share-box .share-bg{position: absolute;left:0;top:0;width: 100%;height: 100%;}
+   .close {
+       position: absolute;
+       left: 0.5rem;
+       top: 0.5rem;
+       z-index: 111;
+       width:0.75rem;
+       height: 0.75rem;
+   }
+
+
+   .demo{
+
+       /*过渡时间，过渡方式*/
+       -webkit-transition:.5s ease;
+       -moz-transition:.5s ease;
+       /*变化的属性*/
+       -webkit-transition-property:all;
+       -moz-transition-property:all;
+
+       width:100%;
+       height:100%;
+       left: 9.53rem;
+       top: -2.5rem;
+       -webkit-animation:bounceOutUp1 2s ease both;
+   }
+
+
+    .hb-bgdown{
+        -webkit-transition:.5s  ease;
+        -moz-transition:.5s  ease;
+
+        /*变化的属性*/
+        -webkit-transition-property:all;
+        -moz-transition-property:all;
+        /*top:200%;*/
+        /*width: 100%;*/
+        /*margin-left: -11.5rem;*/
+        -webkit-animation:bounceOutUp2 .5s ease both;
+
+    }
+
+@keyframes bounceOutUp2 {
+    20% {
+        opacity: 1;
+        transform:translate3d(0, 0, 0);
+
+    }
+
+    /*60% {*/
+        /*opacity: 0;*/
+
+
+    /*}*/
+    to {
+        opacity: 0;
+        transform:translate3d(0, 100%, 0);
+
+        /*transform:scale()*/
+    }
+}
+
+@keyframes bounceOutUp1 {
+     10% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        /*transform:scale()*/
+    }
+}
+.icon-share{position: absolute;right: 3.2rem;top: .8rem;width: 3.34rem;height: 4.19rem;}
+.icon-share img{width: 100%;display: block;}
+.icon-close2{position: absolute;left:1rem;top:1rem;font-size:0.8rem;color: #ffdfae;}
+
+.foolhead{
+    height: 26rem;
+    width: 100%;
+    position: absolute;
+    top: 0rem;
+    /*transform: scale(0.8);*/
+    /*background: url("../foolishimages/1.png") no-repeat;*/
+    /*background-size: 100%;*/
+}
+.foolheadan{
+    -webkit-transition:1s .1s ease;
+    -moz-transition:1s .1s ease;
+
+    /*变化的属性*/
+    -webkit-transition-property:all;
+    -moz-transition-property:all;
+    -webkit-animation:foolheadan .5s ease both;
+}
+
+@keyframes foolheadan{
+    0% {
+        transform: scale3d(.6, .6, .6) translate3d(0, 0, 0);
+
+    }
+
+    to {
+        top:0;
+        transform: scale3d(1, 1, 1) translate3d(0, -75%, 0);
+        /*transform:scale()*/
+    }
+}
+
+.fooltextan{
+    -webkit-transition:1s .1s ease;
+    -moz-transition:1s .1s ease;
+
+    /*变化的属性*/
+    -webkit-transition-property:all;
+    -moz-transition-property:all;
+    -webkit-animation:foolheadan1 .5s ease both;
+}
+
+@keyframes fooltextan1{
+    0% {
+        transform:translate3d(0, 100%, 0);
+
+    }
+
+    to {
+
+        transform:translate3d(0, -20%, 0);
+        /*transform:scale()*/
+    }
+}
+
+
+
+.foolhead .headimg{
+    width: 3.5625rem;
+    height: 3.5625rem;
+    position: absolute;
+    left: 50%;
+
+    margin-left: -1.78125rem;
+    bottom:-1.78125rem;
+    border: 1px solid #f4be94;
+    border-radius: 5px;
+}
+.foolhead .headbg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.aelrtani{
+    -webkit-animation:bounceInal .5s  ease both;
+    -moz-animation:bounceInal .5s  ease both;}
+@-webkit-keyframes bounceInal{
+    0%{opacity:0;
+        -webkit-transform:scale(.3)}
+    10%{
+        opacity:.8;
+    }
+    30%{
+        -webkit-transform:scale(1.05)}
+    70%{-webkit-transform:scale(1)}
+    100%{-webkit-transform:scale(1)}
+}
+@-moz-keyframes bounceInal{
+    0%{opacity:0;
+        -moz-transform:scale(.3)}
+    50%{opacity:.8;
+        -moz-transform:scale(1.05)}
+    70%{-moz-transform:scale(.95)}
+    100%{-moz-transform:scale(1)}
+}
+
+.aelrtaniout{
+    -webkit-animation:bounceInalout .5s  ease both;
+    -moz-animation:bounceInalout .5s  ease both;}
+@keyframes bounceInalout {
+    10% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    50%, 55% {
+        opacity: .4;
+        transform: scale3d(1.03, 1.03, 1.03);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+.sharebg{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.sharebg1{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+}
+.shareren{
+    position: absolute;
+    width: 73%;
+    bottom: 3.5625rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.sharebg2{
+    position: absolute;
+    right: .5rem;
+    top: 4.3125rem;
+    width: 5rem;
+}
+
+.sharebg3{
+    position: absolute;
+    width: 65%;
+    left: 50%;
+    top: 7.5rem;
+    transform: translateX(-50%);
+}
+@media only screen and (width: 375px) and (height: 690px){
+    top:11.5rem;
+}
+
+.callbgbox{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(79,72,73,1);
+}
+.call1{
+    position: absolute;
+    left: 4.3125rem;
+    bottom: 5.1875rem;
+    width: 17%;
+}
+.call2{
+    position: absolute;
+    right: 4.3125rem;
+    bottom: 5.1875rem;
+    width: 17%;
+}
+.callcall{
+    position: absolute;
+    width:2.1875rem ;
+    left: 50%;
+    margin-left: -1.09375rem;
+    top: 4rem;
+}
+.callbg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    right: 0;
+}
+.icon-wxlg {
+    position: absolute;
+    width: 1.4rem;
+    height: 1.4rem;
+    left: 50%;
+    margin-left: -0.7rem;
+    bottom: 0.88rem;
+    z-index: 111;
+}
+.icon-wxlg img {
+    width: 100%;
+    display: block;
+}
